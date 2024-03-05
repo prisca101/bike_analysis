@@ -187,7 +187,8 @@ def plot_season_weathersit(df):
 
 
 
-bike_df = pd.read_csv("https://github.com/prisca101/bike_analysis/blob/main/dashboard/day.csv")
+url = 'https://raw.githubusercontent.com/prisca101/bike_analysis/main/dashboard/day.csv'
+bike_df = pd.read_csv(url)
 
 bike_df["dteday"] = pd.to_datetime(bike_df["dteday"])
 
